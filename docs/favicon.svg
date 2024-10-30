@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
+    <svg viewBox="0 0 100 100">
+        <text x="10" y="70" font-family="Helvetica, sans-serif" font-size="60" >W</text>
+    </svg>
+    <style>
+        text { fill: #000; }
+        @media (prefers-color-scheme: dark) {
+            text { fill: #FFF; }
+        }
+    </style>
+</svg>
