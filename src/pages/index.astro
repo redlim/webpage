@@ -5,9 +5,11 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getLangFromUrl, useTranslations } from '../translations/utils';
 import { Image } from 'astro:assets';
+import homeImage from '../assets/home.jpg';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
 ---
 
 <!doctype html>
@@ -19,7 +21,7 @@ const t = useTranslations(lang);
 		<Header />
 		<main>
 			<h1>Wilder Olmos is a dev!</h1>
-			<Image src="/home.jpg" alt="Wilder Olmos" width={1020} height={510}></Image>
+			<Image src={homeImage} alt="Wilder Olmos" width={1020} height={510}></Image>
 			<p>
 				Hey there! I'm Wilder Olmos but everyone calls me Will, and here’s a bit about me:
 			</p>
